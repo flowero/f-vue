@@ -7,6 +7,7 @@ new Vue({
 });
 
 new Vue({
+
     el: '#print-list',
     data: {
       todos: [
