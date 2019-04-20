@@ -3,6 +3,11 @@ new Vue({
     data: {
         message:'hello vue.js.'
     }
+
+});
+
+new Vue({
+
     el: '#print-list',
     data: {
       todos: [
