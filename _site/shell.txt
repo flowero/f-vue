@@ -1,0 +1,227 @@
+  174  2019-04-19 03:52:32 git
+  175  2019-04-19 03:52:32 git init flowero.github.io
+  190  2019-04-19 03:52:32 rm flowero.github.io/
+  192  2019-04-19 03:52:32 cd github/
+  193  2019-04-19 03:52:32 git init flowero.github.io
+  215  2019-04-19 03:52:32 cd github/flowero.github.io/
+  229  2019-04-19 03:52:32 cd github/flowero.github.io/
+  232  2019-04-19 03:52:32 bundle exec jekyll _3.3.0_ flowero.github.io
+  234  2019-04-19 03:52:32 bundle exec jekyll _3.3.0_ flowero.github.io
+  235  2019-04-19 03:52:32 git init
+  236  2019-04-19 03:52:32 cd flowero.github.io/
+  237  2019-04-19 03:52:32 git init
+  239  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io
+  240  2019-04-19 03:52:32 git add .
+  241  2019-04-19 03:52:32 git commit -m "updated site first test"
+  242  2019-04-19 03:52:32 git config --global user.email "rubing1223@gmail.com"
+  243  2019-04-19 03:52:32 git config --global user.name "Ruby"
+  244  2019-04-19 03:52:32 git commit -m "updated site first test"
+  245  2019-04-19 03:52:32 git config --global user.email "rubing1223@gmail.com"
+  246  2019-04-19 03:52:32 git config --global user.name "Ruby"
+  247  2019-04-19 03:52:32 git commit -m "updated site first test"
+  248  2019-04-19 03:52:32 git push -u origin master
+  249  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  250  2019-04-19 03:52:32 git push -u origin master
+  251  2019-04-19 03:52:32 echo "# flowero.github.io" >> README.md
+  252  2019-04-19 03:52:32 git init
+  253  2019-04-19 03:52:32 git add README.md 
+  254  2019-04-19 03:52:32 git commit -m "first commit"
+  255  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  256  2019-04-19 03:52:32 git push -u origin master
+  258  2019-04-19 03:52:32 git add README.md 
+  260  2019-04-19 03:52:32 git commit -m "first commit"
+  261  2019-04-19 03:52:32 git push -u origin master
+  262  2019-04-19 03:52:32 git add index.html
+  264  2019-04-19 03:52:32 git push -u origin master
+  265  2019-04-19 03:52:32 git pull -u origin master
+  266  2019-04-19 03:52:32 git pull origin master
+  267  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  268  2019-04-19 03:52:32 git pull origin master
+  269  2019-04-19 03:52:32 git push -u origin master
+  270  2019-04-19 03:52:32 git fetch origin
+  271  2019-04-19 03:52:32 git pull origin master
+  272  2019-04-19 03:52:32 git push -u origin master
+  273  2019-04-19 03:52:32 git remote rm origin
+  274  2019-04-19 03:52:32 git remote -v
+  275  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  276  2019-04-19 03:52:32 git pull origin master
+  277  2019-04-19 03:52:32 git remote -v
+  278  2019-04-19 03:52:32 git remote rm origin
+  279  2019-04-19 03:52:32 git remote -v
+  280  2019-04-19 03:52:32 git add .
+  281  2019-04-19 03:52:32 git commit -m "init"
+  282  2019-04-19 03:52:32 git push -u origin master
+  283  2019-04-19 03:52:32 git remote -v
+  284  2019-04-19 03:52:32 git pull origin master
+  286  2019-04-19 03:52:32 git remote -v
+  287  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero3.github.io.git
+  288  2019-04-19 03:52:32 git remote -v
+  290  2019-04-19 03:52:32 git pull origin master
+  292  2019-04-19 03:52:32 git push -u origin master
+  293  2019-04-19 03:52:32 git remote -v
+  294  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  298  2019-04-19 03:52:32 cd flowero.github.io/
+  301  2019-04-19 03:52:32 vi .git
+  302  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  303  2019-04-19 03:52:32 git remote -v
+  304  2019-04-19 03:52:32 git remote rm origin
+  305  2019-04-19 03:52:32 git remote -v
+  306  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io.git
+  307  2019-04-19 03:52:32 git remote -v
+  308  2019-04-19 03:52:32 git push -u origin master
+  310  2019-04-19 03:52:32 git remote -v
+  312  2019-04-19 03:52:32 git push -u origin master
+  313  2019-04-19 03:52:32 git add .
+  314  2019-04-19 03:52:32 git commit -m "test first meesages"
+  315  2019-04-19 03:52:32 git push -u origin master
+  316  2019-04-19 03:52:32 git push origin master
+  317  2019-04-19 03:52:32 git push remote -v
+  318  2019-04-19 03:52:32 git  remote -v
+  319  2019-04-19 03:52:32 git remote rm origin
+  320  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.g
+  321  2019-04-19 03:52:32 git push origin master
+  322  2019-04-19 03:52:32 git  remote -v
+  323  2019-04-19 03:52:32 git pull origin master
+  324  2019-04-19 03:52:32 git remote rm origin
+  325  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero1.g
+  326  2019-04-19 03:52:32 git pull origin master
+  327  2019-04-19 03:52:32 git push origin master
+  328  2019-04-19 03:52:32 git push -u origin master
+  329  2019-04-19 03:52:32 git pull origin master
+  330  2019-04-19 03:52:32 git add .
+  331  2019-04-19 03:52:32 git commit -m "test first meesages"
+  332  2019-04-19 03:52:32 git push -u origin master
+  333  2019-04-19 03:52:32 git  remote -v
+  334  2019-04-19 03:52:32 git add .
+  335  2019-04-19 03:52:32 git commit -m "test first meesages"
+  336  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io
+  337  2019-04-19 03:52:32 git push -u origin master
+  338  2019-04-19 03:52:32 git pull origin master
+  339  2019-04-19 03:52:32 git push -u origin master
+  340  2019-04-19 03:52:32 git  remote -v
+  341  2019-04-19 03:52:32 git  remote rm origin
+  342  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io
+  343  2019-04-19 03:52:32 git remote -v
+  344  2019-04-19 03:52:32 git push -u origin master
+  345  2019-04-19 03:52:32 git add .
+  346  2019-04-19 03:52:32 git commit -m "test first meesages"
+  347  2019-04-19 03:52:32 git push -u origin master
+  348  2019-04-19 03:52:32 git pull origin master
+  349  2019-04-19 03:52:32 git push -u origin master
+  350  2019-04-19 03:52:32 git pull origin master
+  351  2019-04-19 03:52:32 git pull origin master --allow-unrelated-histories
+  352  2019-04-19 03:52:32 git push -u origin master
+  353  2019-04-19 03:52:32 git add .
+  354  2019-04-19 03:52:32 git commit -m "test first meesages"
+  355  2019-04-19 03:52:32 git push -u origin master
+  356  2019-04-19 03:52:32 git init
+  357  2019-04-19 03:52:32 git touchREADgit
+  358  2019-04-19 03:52:32 git touch READMEgit
+  359  2019-04-19 03:52:32 git touch README
+  360  2019-04-19 03:52:32 git touch README.md
+  361  2019-04-19 03:52:32 git --help
+  362  2019-04-19 03:52:32 git push -u origin master
+  363  2019-04-19 03:52:32 git config --global user.email "rubing1223@gmail.com"
+  364  2019-04-19 03:52:32 git config --global user.name "Ruby"
+  365  2019-04-19 03:52:32 git push -u origin master
+  366  2019-04-19 03:52:32 git add .
+  367  2019-04-19 03:52:32 git commit -m "test first meesages"
+  368  2019-04-19 03:52:32 git push -u origin master
+  369  2019-04-19 03:52:32 git pull --rebase origin master
+  370  2019-04-19 03:52:32 git add .
+  371  2019-04-19 03:52:32 git commit -m "test first meesages\"
+  372  2019-04-19 03:52:32 git commit -m "test first meesages"
+  373  2019-04-19 03:52:32 git push -u origin master
+  374  2019-04-19 03:52:32 git add .
+  375  2019-04-19 03:52:32 git pull --rebase origin master
+  376  2019-04-19 03:52:32 git commit -m "test first meesages"
+  377  2019-04-19 03:52:32 git pull --rebase origin master
+  378  2019-04-19 03:52:32 git pull --rebase abort
+  379  2019-04-19 03:52:32 git pull --rebase continue
+  380  2019-04-19 03:52:32 git pull --rebase origin master
+  381  2019-04-19 03:52:32 rm -fr "/home/ruby/github/flowero.github.io/.git/rebase-apply"
+  382  2019-04-19 03:52:32 git pull --rebase origin master
+  383  2019-04-19 03:52:32 git add .
+  384  2019-04-19 03:52:32 git commit -m "test first meesages"
+  385  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io
+  386  2019-04-19 03:52:32 git add .
+  387  2019-04-19 03:52:32 git commit -m "test first meesages"
+  388  2019-04-19 03:52:32 git remote -v
+  389  2019-04-19 03:52:32 git push -u origin master
+  390  2019-04-19 03:52:32 git init
+  391  2019-04-19 03:52:32 git add .
+  392  2019-04-19 03:52:32 git commit -m "test first meesages"
+  393  2019-04-19 03:52:32 git push -u origin master
+  394  2019-04-19 03:52:32 git pull --rebase origin master
+  395  2019-04-19 03:52:32 git push -u origin master
+  396  2019-04-19 03:52:32 git pull origin master
+  397  2019-04-19 03:52:32 git push -u origin master
+  398  2019-04-19 03:52:32 git add .
+  399  2019-04-19 03:52:32 git commit -m "test first meesages"
+  400  2019-04-19 03:52:32 git checkout -b gh-pages
+  401  2019-04-19 03:52:32 git add .
+  402  2019-04-19 03:52:32 git commit -m "test first meesages"
+  403  2019-04-19 03:52:32 git -b gh-pages
+  404  2019-04-19 03:52:32 git  gh-pages
+  405  2019-04-19 03:52:32 git checkout gh-pages
+  406  2019-04-19 03:52:32 git add .
+  407  2019-04-19 03:52:32 git commit -m "test first meesages"
+  408  2019-04-19 03:52:32 git push -u origin master
+  409  2019-04-19 03:52:32 git pull origin master
+  410  2019-04-19 03:52:32 git push -u origin master
+  411  2019-04-19 03:52:32 git push origin master
+  412  2019-04-19 03:52:32 git push -u origin master
+  413  2019-04-19 03:52:32 git pull origin master
+  414  2019-04-19 03:52:32 git pull --rebase origin master
+  415  2019-04-19 03:52:32 git add .
+  416  2019-04-19 03:52:32 git commit -m "test first meesages"
+  417  2019-04-19 03:52:32 git pull origin master
+  418  2019-04-19 03:52:32 git push -u origin master
+  419  2019-04-19 03:52:32 git config --global credential.helper store
+  420  2019-04-19 03:52:32 git push -u origin master
+  421  2019-04-19 03:52:32 git config --global --unset http.proxy
+  422  2019-04-19 03:52:32 git config --global --unset https.proxy
+  423  2019-04-19 03:52:32 git remote rm origin
+  424  2019-04-19 03:52:32 git remote add origin https://github.com/flowero/flowero.github.io
+  425  2019-04-19 03:52:32 git pull
+  426  2019-04-19 03:52:32 git branch gh-pages
+  427  2019-04-19 03:52:32 git checkout gh-pages
+  428  2019-04-19 03:52:32 git pull
+  429  2019-04-19 03:52:32 git-pull(1)
+  430  2019-04-19 03:52:32 git pull origin master
+  431  2019-04-19 03:52:32 git push -u origin master
+  432  2019-04-19 03:52:32 git pull --rebase origin master
+  433  2019-04-19 03:52:32 git am --show-current-patch
+  434  2019-04-19 03:52:32 git add/rm <conflicted_files>
+  435  2019-04-19 03:52:32 git rm <conflicted_files>
+  436  2019-04-19 03:52:32 git rm README.md
+  437  2019-04-19 03:52:32 git rebase --skip
+  438  2019-04-19 03:52:32 git push -u origin master
+  439  2019-04-19 03:52:32 git add .
+  440  2019-04-19 03:52:32 git commit -m "test first meesages"
+  441  2019-04-19 03:52:32 git push -u origin master
+  443  2019-04-19 03:52:32 cd github/
+  445  2019-04-19 03:52:32 cd flowero.github.io/
+  447  2019-04-19 03:52:32 git checkout -b gh-pages
+  469  2019-04-19 03:52:32 cd github/
+  470  2019-04-19 03:52:32 cd flowero.github.io/
+  497  2019-04-19 03:52:32 cd github/flowero.github.io/
+  504  2019-04-19 03:52:32 cd github/flowero
+  505  2019-04-19 03:52:32 cd github/flowero.github.io/
+  512  2019-04-19 03:52:32 cd github/flowero.github.io/
+  515  2019-04-19 03:52:32 vi .git
+  516  2019-04-19 03:52:32 git remote -v
+  517  2019-04-19 03:52:32 vi .git
+  518  2019-04-19 03:52:32 git remote -v
+  519  2019-04-19 03:52:40 github-pages 
+  520  2019-04-19 03:52:46 cd github/
+  521  2019-04-19 03:52:50 cd flowero.github.io/
+  523  2019-04-19 03:57:31 git init
+  524  2019-04-19 03:57:38 git add .
+  525  2019-04-19 03:57:53 git commit -m "test"
+  527  2019-04-19 04:13:05 git checkout vue-branch
+  528  2019-04-19 04:14:48 git pull
+  529  2019-04-19 04:15:26 git checkout -b vue-branch
+  530  2019-04-19 04:15:51 git push origin vue-branch
+  533  2019-04-19 04:28:30 history | grep git remote
+  537  2019-04-19 04:32:53 history | grep git > shell.txt
