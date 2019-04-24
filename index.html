@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>畅远网络</title>
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/js" href="https://unpkg.com/vue/dist/vue.js">
 
@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="col-md-6 col-md-offset-3">
-            <h1>Vue demo</h1>
+            <h1>畅远网络</h1>
             <div id="print-msg">
               <div>{{message}}</div>
             </div>
@@ -22,10 +22,109 @@
               </ol>
             </div>
 
+            <div id = "computed_props">
+                千米 : <input type = "text" v-model = "kilometers">
+                米 : <input type = "text" v-model = "meters">
+            </div>
+            <p id="info"></p>
+            <!--反转字符串-->
+            <div id="reverseMsgApp">
+                <p>{{ message }}</p>
+                <button v-on:click="reverseMessage">反转字符串</button>
+            </div>
+            <!--结束反转-->
+            <br>
+            <h3>可选套餐：</h3>
+            <div id="checkbox-list">
+              <p>单个复选框：</p>
+              <input type="checkbox" id="checkbox" v-model="checked">
+              <label for="checkbox">{{ checked }}</label>
+
+              <p>地图认证：</p>
+              <input type="checkbox" id="runoob" value="百度地图" v-model="checkedNames">
+              <label for="runoob">百度地图</label>
+              <input type="checkbox" id="google" value="腾讯地图" v-model="checkedNames">
+              <label for="google">腾讯地图</label>
+              <input type="checkbox" id="taobao" value="高德地图" v-model="checkedNames">
+              <label for="taobao">高德地图</label>
+              <br>
+              <span>您的选择为: {{ checkedNames }}</span>
+            </div>
+            <div id="url-choice">
+              <select v-model="selected" name="fruit">
+                <option value="">请选择一个网站</option>
+                <option value="www.runoob.com">百度</option>
+                <option value="www.google.com">腾讯</option>
+              </select>
+
+              <div id="output">
+                  您选择的网站是: {{selected}}
+              </div>
+            </div>
+
         </div>
     </div>
 <script src="/files/js/vue.js"></script>
 <script src="/files/js/cus.js"></script>
 
+<script>
+new Vue({
+  el: '#url-choice',
+  data: {
+  selected: ''
+  }
+})
+</script>
+<script>
+new Vue({
+  el: '#checkbox-list',
+  data: {
+    checked : false,
+    checkedNames: []
+  }
+})
+</script>
+<script>
+new Vue({
+  el: '#reverseMsgApp',
+  data: {
+    message: '畅远网络'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+</script>
+
+<script type = "text/javascript">
+    var vm = new Vue({
+    el: '#computed_props',
+    data: {
+        kilometers : 0,
+        meters:0
+    },
+    methods: {
+    },
+    computed :{
+    },
+    watch : {
+        kilometers:function(val) {
+            this.kilometers = val;
+            this.meters = this.kilometers * 1000
+        },
+        meters : function (val) {
+            this.kilometers = val/ 1000;
+            this.meters = val;
+        }
+    }
+    });
+    // $watch 是一个实例方法
+    vm.$watch('kilometers', function (newValue, oldValue) {
+    // 这个回调将在 vm.kilometers 改变后调用
+    document.getElementById ("info").innerHTML = "修改前值为: " + oldValue + "，修改后值为: " + newValue;
+})
+</script>
 </body>
 </html>

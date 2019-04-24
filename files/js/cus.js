@@ -1,7 +1,7 @@
 new Vue({
     el:'#print-msg',
     data: {
-        message:'hello vue.js.'
+        message:'大家好！！'
     }
 
 });
@@ -10,9 +10,9 @@ new Vue({
     el: '#print-list',
     data: {
       todos: [
-        { text: 'Learn JavaScript' },
-        { text: 'Learn Vue' },
-        { text: 'Build something awesome' }
+        { text: '网页设计' },
+        { text: '网站制作' },
+        { text: '微信公众号推广' }
       ]
     }
 });
