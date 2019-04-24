@@ -1,0 +1,15 @@
+  613  git pull origin master
+  614  bundle exec jekyll serve
+  615  exit
+  616  ruby --version
+  617  
+  623  cd github/
+  624  mkdir vue_1
+  625  cd vue_1/
+  626  git init
+  627 
+  628  git remote add origin https://github.com/flowero/flowero.github.io
+  629  git pull origin master
+  630  history 15 
+  631  history 15 > start_jekyll_project.txt
+  632  history 20 > start_jekyll_project.txt
