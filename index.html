@@ -68,6 +68,7 @@
     <!--循环列表-->
     <div class="container">
         <div class="row">
+          <a href="cart.html">购物车</a>
             <table class="table table-bordered table-hover">
                 <caption style="caption-side:top" class="text-center text-danger">钱钱购物车</caption>
                 <tr>
@@ -112,10 +113,9 @@
     </div>
 <script src="/files/js/vue.js"></script>
 <script src="/files/js/cus.js"></script>
-<script src="./node_modules/vue/dist/vue.js"></script>
 <!--ajax要用到axios库，它和别的没有依赖关系，随便在哪里引用都可以-->
 <!--基于promise的-->
-<script src="./node_modules/axios/dist/axios.js"></script>
+<script src="/files/js/axios.js"></script>
 <script>
     let vm = new Vue({
         el:'#app',
@@ -130,7 +130,7 @@
                 //这里有个错误，this指向问题，回调函数中的this都指的是window，所以要改成箭头函数的方式，不能写function的形式
                 //then基于promise，解决回调问题
                 //要在初始化数据这块对全选状态进行初始化
-                axios.get("json/book.json").then(res=>{this.products = res.data;this.checkOne();},err=>{console.log(err)});
+                axios.get("files/json/book.json").then(res=>{this.products = res.data;this.checkOne();},err=>{console.log(err)});
             },
             remove(product){  //product指当前点击的这一项
                 this.products = this.products.filter(item=>item !== product);
