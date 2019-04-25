@@ -8,7 +8,28 @@
 
 </head>
 <body>
+  <template id="my-banner">
+
+  <div class="swiper-container banner">
+  <div class="swiper-wrapper">
+  <div
+  v-for = "banner in banners"
+  :key="banner.id"
+  class="swiper-slide"
+  >
+  <img width="100%" :src="banner.image" alt="">
+  </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  </div>
+  </template>
+
     <div class="container">
+      <div class="col-md-6 col-md-offset-3"><img width="100%" src="/files/1.png" alt=""></div>
+      <div class="col-md-6 col-md-offset-3"><img width="100%" src="/files/2.jpg" alt=""></div>
+      <div class="col-md-6 col-md-offset-3"><img width="100%" src="/files/3.png" alt=""></div>
+      <div class="col-md-6 col-md-offset-3"><img width="100%" src="/files/walking.jpeg" alt=""></div>
+      <div class="col-md-6 col-md-offset-3"><img width="100%" src="/files/writing.jpg" alt=""></div>
         <div class="col-md-6 col-md-offset-3">
             <h1>畅远网络</h1>
             <div id="print-msg">
@@ -113,6 +134,82 @@
     </div>
 <script src="/files/js/vue.js"></script>
 <script src="/files/js/cus.js"></script>
+<script src="./swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.5.0/vue-resource.min.js"></script>
+<script>
+    // 只有当数据被使用在模板中，也就说， 数据更改之后会触发模板重新render的情况下，数据更改才会触发运行中阶段的两个钩子函数
+    Vue.component ('my-banner', {
+        template: '#my-banner',
+        data () {
+            return {
+                banners: []
+            }
+        },
+        methods: {
+            getBanners () {
+                this.$http.get('./banners.json').then(res => {
+                    console.log(res.body.bannerList)
+                    this.banners = res.body.bannerList
+                    //在这里能动，但是不能滑过去
+                    //因为在这里实例化的时候，页面中其实已经有了dom，但是还没有swiper-slide，刚刚更改完数据，dom还没有重新渲染ね
+                    //而当dom宣布更新完成后，早已经实例化swiper结束了
+                    // new Swiper('.banner')
+
+                    Vue.nextTick (() => {
+                        //在这里，banners改变后所引起的swiper-slide重新循环渲染已经结束了，页面中已经有了多个图片了
+                        this.swiper = new Swiper('.banner',{
+                            pagination:{el:'.swiper-pagination'}
+                        })
+                    })
+
+                })
+            }
+        },
+        created () {
+            this.getBanners()
+        },
+        mounted () {
+            //在这里，数据还没有获取到，所以页面中也没有swiper-slide，所以还是能滑但是滑步过去。
+            // new Swiper('.banner')
+        },
+        beforeUpdate () {
+            //在这里，数据虽然已经获取到了，数据已经更改了，但是dom还没有重新渲染，所以，依然没有swiper-slide，所以还是能滑但是滑步过去。
+            // new Swiper('.banner')
+        },
+        updated () {
+            //在这个地方也有一些隐患，如果有其他数据，当其他数据改变的时候，也会执行updated，相当于又一次实例化swiper
+            // if(!this.swiper){
+            //     this.swiper = new Swiper('.banner',{
+            //         pagination:{el:'.swiper-pagination'}
+            //     })
+            // }
+        },
+        watch: {
+            banners () {
+                //这里也是只是数据变了，dom还没有
+                // setTimeout(() => {
+                    // new Swiper('.banner',{
+                    //     pagination:{el:'.swiper-pagination'}
+                    // })
+                // }, 0);
+            }
+        },
+        beforeDestroy () {
+            delete this.swiper
+        }
+    })
+
+    //nextTick 里面的回调函数，会在上一次的数据改变所引起的dom更新完成后触发
+    // Vue.nextTick(callback)
+
+    // new Swiper('.banner')
+
+    new Vue ({
+        el: '#app'
+    })
+</script>
+
 <!--ajax要用到axios库，它和别的没有依赖关系，随便在哪里引用都可以-->
 <!--基于promise的-->
 <script src="/files/js/axios.js"></script>
